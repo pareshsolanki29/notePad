@@ -1,0 +1,20 @@
+
+<form [formGroup]="addNoteForm" (ngSubmit)="onSubmit()">
+
+    <div class="example-container">
+    
+        <mat-form-field>
+          <input matInput placeholder="Title" formControlName="title">
+        </mat-form-field>
+      
+        <mat-form-field>
+          <textarea matInput placeholder="Textarea" formControlName="textarea"></textarea>
+        </mat-form-field>
+        <mat-dialog-actions>
+        <button mat-button type="submit">Add Me</button>
+        <button mat-raised-button color="primary" type="button" (click)="deleteMe(this.data.ID)">Delete Me</button>
+        </mat-dialog-actions> 
+     
+      </div>
+      </form>
+  
